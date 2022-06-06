@@ -16,7 +16,7 @@ Files in this folder
 The Virtual Host file to proxy the openvscode-server HTTP connections and also WebSocket Connections. Also contains simple basic authentication to put the page behind a username and password. Another thing to note is that Apache 2.4.48 is the minimum to get WebSocket proxy to work. These modules also needs to be enabled: proxy, proxy_http, proxy_wstunnel
 
 ### docker-compose.yml
-A docker-compose file for the linuxserver openvscode-server image. Mounts 2 folders, a config folder for the and a gits folder
+A docker-compose file for the linuxserver openvscode-server image. Mounts 2 folders, a config folder for the and a gits folder, and also maps 4 ports, 1 for the Web UI and 3 other ports to be used by running projects inside the container. 
 
 ## Scripts
 The following is a short script to install software for C/C++, Python, Javascript/NodeJS, and Golang.
