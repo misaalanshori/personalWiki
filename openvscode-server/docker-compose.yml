@@ -1,0 +1,19 @@
+version: "2.1"
+services:
+  openvscode-server:
+    image: lscr.io/linuxserver/openvscode-server:latest
+    container_name: openvscode-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Jakarta
+      - SUDO_PASSWORD=apasswordlol
+    volumes:
+      - ./config:/config
+      - ~/gits:/config/gits
+    ports:
+      - 1230:3000
+      - 1280:80
+      - 1288:8080
+      - 1200:8000
+    restart: unless-stopped
