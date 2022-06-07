@@ -7,7 +7,7 @@ Things about setting up [openvscode-server on docker](https://github.com/linuxse
 - I can't change the internal listening port without forking the docker files.
 - I haven't found a way to change the username or hostname, its just stuck with abc@{randomnumbers}
 - It uses web sockets, so make sure to also proxy that when using apache.
-- It seems like programs installed in the container are persistent, so I won't need to reconfigure everything. Though a short list of commands to setup my commonly used programming languages will be in this readme.
+- It seems like programs installed in the container are persistent, so I won't need to reconfigure everything. Though a short list of commands to setup my commonly used programming languages will be in this readme. Note to self: `docker-compose down` deletes everything, so unless you f\*cked something up in the container, the command you want to run is probably `docker-compose stop`
 
 ## Files
 Files in this folder
