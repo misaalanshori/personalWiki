@@ -27,3 +27,5 @@ sudo apt install python3 python3-pip -y # Install Python
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) $ Install GVM for Golang
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash # Install NVM for NodeJS, though refer to https://github.com/nvm-sh/nvm for latest versions
 ```
+### Scripts Notes
+- Make sure to set the Go default with GVM, For example `gvm use go1.18.3 --default`
